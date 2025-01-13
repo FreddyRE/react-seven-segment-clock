@@ -5,6 +5,7 @@
     border-radius: 10px;
     color: white;
     position: absolute;
+    opacity: 0.2;
 }
 
 .s1 {
@@ -37,4 +38,8 @@
     transform: rotate(90deg);
     left: -35px;
     top: 45px;
+}
+
+.on {
+    opacity: 1;
 }
