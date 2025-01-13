@@ -5,6 +5,8 @@ import { Segment } from "./Segment"
 export const Digit:React.FC<{number:number}> = ({number}) => {
 
     const [displayNumber, setDisplayNumber] = useState<boolean[]>([])
+
+    const keys = ["digit1", "digit2", "digit3", "digit4", "digit5", "digit6", "digit7"]
     
     useEffect(()=>{
         function getSequence () {
@@ -41,7 +43,7 @@ export const Digit:React.FC<{number:number}> = ({number}) => {
             displayNumber.length > 0 && 
             
             displayNumber.map((val, index)=>{
-                return <Segment segment_number={index+1} is_on={val}/>
+                return <Segment key={keys[index]} segment_number={index+1} is_on={val}/>
             })
         }
  

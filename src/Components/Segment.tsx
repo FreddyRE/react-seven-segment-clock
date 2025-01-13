@@ -7,5 +7,7 @@ interface Segment {
 
 
 export const Segment:React.FC<Segment> = ({segment_number, is_on}) => {
-    return <div className={`segment s${segment_number} ${is_on?"on":''}`}>{segment_number}</div>
+    return <div className={`segment s${segment_number} ${is_on?"on":''}`}>
+        
+    </div>
 }   

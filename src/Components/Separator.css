@@ -1,0 +1,13 @@
+.separator {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    color: red;
+    box-shadow: 0 0 15px red;
+    background-color: red;
+}
