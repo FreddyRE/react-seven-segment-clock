@@ -2,6 +2,8 @@
 
 A digital clock built with React and TypeScript, powered by [Vite](https://vitejs.dev/). Each digit is rendered using a custom 7-segment display component—no images or SVGs, just pure HTML/CSS magic and React’s state management.
 
+![Alt Text](public/demo.gif)
+
 ## Table of Contents
 
 - [Features](#features)
