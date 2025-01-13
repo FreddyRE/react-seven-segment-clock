@@ -1,0 +1,40 @@
+.segment  {
+    width: 80px;
+    height: 10px;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+}
+
+.s1 {
+    top: 0;
+}
+
+.s2 {
+    right: -35px;
+    top: 45px;
+    transform: rotate(90deg);
+}
+
+.s3 {
+    transform: rotate(90deg);
+    right: -35px;
+    bottom: 45px;
+}
+
+.s4 {
+    bottom: 0px;
+}
+
+.s5 {
+    transform: rotate(90deg);
+    left: -35px;
+    bottom: 45px;
+}
+
+.s6 {
+    transform: rotate(90deg);
+    left: -35px;
+    top: 45px;
+}

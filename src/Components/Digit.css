@@ -1,0 +1,8 @@
+.digit {
+    width: 100px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
