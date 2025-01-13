@@ -1,50 +1,83 @@
-# React + TypeScript + Vite
+# 7-Segment Display Clock (Vite + React + TypeScript)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A digital clock built with React and TypeScript, powered by [Vite](https://vitejs.dev/). Each digit is rendered using a custom 7-segment display component—no images or SVGs, just pure HTML/CSS magic and React’s state management.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- **7-Segment Digit Mapping**  
+  Automatically lights up the correct segments for numbers `0-9`.
+- **Real-Time Clock Updates**  
+  Uses an interval to fetch the current time every second.
+- **TypeScript**  
+  Ensures type safety and cleaner, more maintainable code.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Getting Started
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. **Clone the Repository**  
+   ```bash
+   git clone https://github.com/your-username/7-segment-display-clock.git
+   cd 7-segment-display-clock
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
+Thought about 7-segment clock with Vite TS for a few seconds
+markdown
+Copy code
+# 7-Segment Display Clock (Vite + React + TypeScript)
+
+A digital clock built with React and TypeScript, powered by [Vite](https://vitejs.dev/). Each digit is rendered using a custom 7-segment display component—no images or SVGs, just pure HTML/CSS magic and React’s state management.
+
+## Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## Features
+
+- **7-Segment Digit Mapping**  
+  Automatically lights up the correct segments for numbers `0-9`.
+- **Real-Time Clock Updates**  
+  Uses an interval to fetch the current time every second.
+- **Responsive Design**  
+  Easily adaptable styling to fit various screen sizes.
+- **TypeScript**  
+  Ensures type safety and cleaner, more maintainable code.
+
+---
+
+## Getting Started
+
+1. **Clone the Repository**  
+   ```bash
+   git clone https://github.com/your-username/7-segment-display-clock.git
+   cd 7-segment-display-clock
+
+2. **Install Dependencies**  
+   ```bash
+   npm install
+
+3. **Start Development Server**  
+   ```bash
+   npm run dev
+
+This starts the app at http://localhost:5173 by default (Vite’s typical port).
+
+
